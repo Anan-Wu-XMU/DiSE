@@ -5,3 +5,5 @@ A diffusion probabilistic model for automatic structure elucidation of organic c
 ![DiSE](https://github.com/user-attachments/assets/e2ae3a50-e473-419c-8f76-ba948152be75)
 
 The code and simulated data used for training the networks will be publicly available soon. 
+
+Details can be found at https://arxiv.org/abs/2510.26231.
