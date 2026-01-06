@@ -86,7 +86,12 @@ DiSE/
 
 ```
 ## Usage
-### 1. Inference (Predicting Structure from Spectra)
+### 1. Breif Introduction of Input
+Example files can be found in the `configs/bellissinanes` directory (with the file extension *.yaml). Users only need to input the molecular formula (inferred from MS), the corresponding 13C and 1H chemical shifts, and the HH COSY data. 
+
+!!! It's important to note that when inputting the HH COSY data, you should input the chemical shifts of the carbons directly bonded to the hydrogens, not the chemical shifts of the hydrogens themselves.
+
+### 2. Inference (Predicting Structure from Spectra)
 To elucidate a structure (example for Bellissinanes-1):
 
 !!! sure that you have placed the downloaded model checkpoint `DiSE_best.ckpt` in the correct directory as shown above.
@@ -97,12 +102,11 @@ To elucidate a structure (example for Bellissinanes-1):
 python main.py +bellissinanes=1-639.yaml 
 ```
 
-### 2. Training
+### 3. Training
 To train DiSE on the QM9-NMR dataset:
 ```bash
 python main.py
 ```
-
 
 ## Citation
 If you find DiSE useful in your research, please consider citing the following paper:
@@ -122,3 +126,4 @@ If you find DiSE useful in your research, please consider citing the following p
 ## Acknowledgements
 Code development based on
 - [DiGress](https://github.com/cvignac/DiGress)
+
