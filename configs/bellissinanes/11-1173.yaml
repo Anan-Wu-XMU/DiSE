@@ -1,0 +1,49 @@
+# @package _global_
+prediction_input:
+  molecular_formula: 'C21H36O3' # single molecular run
+  C_H_NMR_shifts_and_HSQC: [[22.2, 1.59, 1.65], [26.9, 2.02, 2.1], [134.1], [122.1, 5.42], [47.91, 1.73], [47.92, 1.2], [24.5, 1.07, 1.45], [31.3, 1.58, 1.06], [42.1, 1.6], [72.9], [32.2, 1.68], [35.9, 1.18, 1.18], [25.6, 1.17, 1.29], [34.2, 1.61, 1.35], [39.6, 2.43], [177.5], [17.3, 1.14, 1.14, 1.14], [13.4, 0.77, 0.77, 0.77], [23.7, 1.7, 1.7, 1.7], [15.3, 0.96, 0.96, 0.96], [51.6, 3.67, 3.67, 3.67]]
+  HH_COSY: [[122.1, 47.91], [47.92, 47.91], [47.92, 32.2], [47.92, 24.5], [32.2, 17.3], [32.2, 35.9], [35.9, 22.2], [22.2, 34.2], [34.2, 39.6], [39.6, 15.3], [24.5, 26.9], [26.9, 42.1], [42.1, 13.4], [31.3, 25.6]]
+  num_OH: 1
+  num_NH2: 0
+  num_NH: 0
+  #multi_molecules_input_files: 'inputs/example_input.csv' # Path to the batched molecular input file
+                                                          # if not None, will overwrite the single molecular input
+  multi_molecules_input_files: None
+dataset:
+  name: 'pcqm4mv2nmr-advanced-prediction-bellissinanes-11-1173-exp'
+  edge_types: [8.4975e-01, 9.7150e-02, 8.6272e-03, 8.9793e-04, 4.2763e-02, 8.0763e-04]
+train:
+  batch_size: 256
+  infer_start_id: 0
+  multi_infer: 256
+  visualize_chain: False
+general:
+  name: 'pcqm4mv2nmr-advanced-prediction-bellissinanes-11-1173-exp'
+  gpus: [2]
+  test_only: /home/hcchen/Di-GT-NMR-0317/src/Pretrained/pcqm4mv2nmr-advanced-best/checkpoints/pcqm4mv2nmr-advanced/epoch=1173.ckpt
+  chains_to_save: 50
+  log_every_steps: 1
+  number_chain_steps: 50
+model: # NOT NEED TO CHANGE
+  type: 'discrete'
+  transition: 'marginal'
+  model: Di-GT-NMR
+  diffusion_steps: 500
+  diffusion_noise_schedule: custom
+  n_layers: 20
+  extra_features: all
+  hidden_mlp_dims:
+    X: 1024
+    E: 512
+    y: 512
+  hidden_dims:
+    dx: 1024
+    de: 256
+    dy: 256
+    n_head: 32
+    dim_ffX: 1024
+    dim_ffE: 512
+    dim_ffy: 512
+  lambda_train:
+  - 5
+  - 0

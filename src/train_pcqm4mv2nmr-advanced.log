@@ -1,0 +1,379 @@
+nohup: ignoring input
+[2025-01-01 21:33:30,932] [INFO] [real_accelerator.py:110:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+2025-01-01 21:33:34.705670: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2025-01-01 21:33:38.462826: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+pcqm4mv2nmr-advanced
+/home/hcchen/.local/lib/python3.8/site-packages/torch/nn/init.py:405: UserWarning: Initializing zero-element tensors is a no-op
+  warnings.warn("Initializing zero-element tensors is a no-op")
+Marginal distribution of the classes: tensor([8.4975e-01, 9.7150e-02, 8.6272e-03, 8.9793e-04, 4.2763e-02, 8.0763e-04]) for edges
+Marginal distribution of the classes: tensor([8.4975e-01, 9.7150e-02, 8.6272e-03, 8.9793e-04, 4.2763e-02, 8.0763e-04]) for edges
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+Initializing distributed: GLOBAL_RANK: 0, MEMBER: 1/4
+[2025-01-01 21:34:05,977] [INFO] [real_accelerator.py:110:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-01-01 21:34:06,111] [INFO] [real_accelerator.py:110:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-01-01 21:34:06,651] [INFO] [real_accelerator.py:110:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+2025-01-01 21:34:08.094583: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2025-01-01 21:34:08.155342: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2025-01-01 21:34:08.838551: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+/home/hcchen/.local/lib/python3.8/site-packages/torch/nn/init.py:405: UserWarning: Initializing zero-element tensors is a no-op
+  warnings.warn("Initializing zero-element tensors is a no-op")
+Initializing distributed: GLOBAL_RANK: 2, MEMBER: 3/4
+pcqm4mv2nmr-advanced
+Marginal distribution of the classes: tensor([8.4975e-01, 9.7150e-02, 8.6272e-03, 8.9793e-04, 4.2763e-02, 8.0763e-04]) for edges
+Marginal distribution of the classes: tensor([8.4975e-01, 9.7150e-02, 8.6272e-03, 8.9793e-04, 4.2763e-02, 8.0763e-04]) for edges
+[2025-01-01 21:34:25,624][torch.distributed.distributed_c10d][INFO] - Added key: store_based_barrier_key:1 to store for rank: 2
+/home/hcchen/.local/lib/python3.8/site-packages/torch/nn/init.py:405: UserWarning: Initializing zero-element tensors is a no-op
+  warnings.warn("Initializing zero-element tensors is a no-op")
+Initializing distributed: GLOBAL_RANK: 1, MEMBER: 2/4
+pcqm4mv2nmr-advanced
+Marginal distribution of the classes: tensor([8.4975e-01, 9.7150e-02, 8.6272e-03, 8.9793e-04, 4.2763e-02, 8.0763e-04]) for edges
+Marginal distribution of the classes: tensor([8.4975e-01, 9.7150e-02, 8.6272e-03, 8.9793e-04, 4.2763e-02, 8.0763e-04]) for edges
+[2025-01-01 21:34:26,131][torch.distributed.distributed_c10d][INFO] - Added key: store_based_barrier_key:1 to store for rank: 1
+/home/hcchen/.local/lib/python3.8/site-packages/torch/nn/init.py:405: UserWarning: Initializing zero-element tensors is a no-op
+  warnings.warn("Initializing zero-element tensors is a no-op")
+Initializing distributed: GLOBAL_RANK: 3, MEMBER: 4/4
+pcqm4mv2nmr-advanced
+Marginal distribution of the classes: tensor([8.4975e-01, 9.7150e-02, 8.6272e-03, 8.9793e-04, 4.2763e-02, 8.0763e-04]) for edges
+Marginal distribution of the classes: tensor([8.4975e-01, 9.7150e-02, 8.6272e-03, 8.9793e-04, 4.2763e-02, 8.0763e-04]) for edges
+[2025-01-01 21:34:26,389][torch.distributed.distributed_c10d][INFO] - Added key: store_based_barrier_key:1 to store for rank: 3
+[2025-01-01 21:34:26,391][torch.distributed.distributed_c10d][INFO] - Added key: store_based_barrier_key:1 to store for rank: 0
+[2025-01-01 21:34:26,392][torch.distributed.distributed_c10d][INFO] - Rank 0: Completed store-based barrier for key:store_based_barrier_key:1 with 4 nodes.
+----------------------------------------------------------------------------------------------------
+distributed_backend=nccl
+All distributed processes registered. Starting with 4 processes
+----------------------------------------------------------------------------------------------------
+
+You are using a CUDA device ('NVIDIA GeForce RTX 4090') that has Tensor Cores. To properly utilize them, you should set `torch.set_float32_matmul_precision('medium' | 'high')` which will trade-off precision for performance. For more details, read https://pytorch.org/docs/stable/generated/torch.set_float32_matmul_precision.html#torch.set_float32_matmul_precision
+[2025-01-01 21:34:26,394][torch.distributed.distributed_c10d][INFO] - Rank 1: Completed store-based barrier for key:store_based_barrier_key:1 with 4 nodes.
+[2025-01-01 21:34:26,400][torch.distributed.distributed_c10d][INFO] - Rank 3: Completed store-based barrier for key:store_based_barrier_key:1 with 4 nodes.
+[2025-01-01 21:34:26,399][torch.distributed.distributed_c10d][INFO] - Rank 2: Completed store-based barrier for key:store_based_barrier_key:1 with 4 nodes.
+Restoring states from the checkpoint path at /home/hcchen/Di-GT-NMR-0101-master-test/Di-GT-NMR-1224-master/src/2025-01-01-20-01-12-pcqm4mv2nmr-advanced/checkpoints/pcqm4mv2nmr-advanced/epoch=0.ckpt
+/home/hcchen/.local/lib/python3.8/site-packages/pytorch_lightning/callbacks/model_checkpoint.py:338: UserWarning: The dirpath has changed from '/home/hcchen/Di-GT-NMR-1224-test2/Di-GT-NMR-1224-master-test/outputs/2025-01-01-20-01-12-pcqm4mv2nmr-advanced/checkpoints/pcqm4mv2nmr-advanced' to '/home/hcchen/Di-GT-NMR-0101-master-test/Di-GT-NMR-1224-master/src/2025-01-01-20-01-12-pcqm4mv2nmr-advanced/checkpoints/pcqm4mv2nmr-advanced-resume', therefore `best_model_score`, `kth_best_model_path`, `kth_value`, `last_model_path` and `best_k_models` won't be reloaded. Only `best_model_path` will be reloaded.
+  warnings.warn(
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3]
+/home/hcchen/.local/lib/python3.8/site-packages/pytorch_lightning/callbacks/model_checkpoint.py:338: UserWarning: The dirpath has changed from '/home/hcchen/Di-GT-NMR-1224-test2/Di-GT-NMR-1224-master-test/outputs/2025-01-01-20-01-12-pcqm4mv2nmr-advanced/checkpoints/pcqm4mv2nmr-advanced' to '/home/hcchen/Di-GT-NMR-0101-master-test/Di-GT-NMR-1224-master/src/2025-01-01-20-01-12-pcqm4mv2nmr-advanced/checkpoints/pcqm4mv2nmr-advanced-resume', therefore `best_model_score`, `kth_best_model_path`, `kth_value`, `last_model_path` and `best_k_models` won't be reloaded. Only `best_model_path` will be reloaded.
+  warnings.warn(
+LOCAL_RANK: 2 - CUDA_VISIBLE_DEVICES: [0,1,2,3]
+/home/hcchen/.local/lib/python3.8/site-packages/pytorch_lightning/callbacks/model_checkpoint.py:338: UserWarning: The dirpath has changed from '/home/hcchen/Di-GT-NMR-1224-test2/Di-GT-NMR-1224-master-test/outputs/2025-01-01-20-01-12-pcqm4mv2nmr-advanced/checkpoints/pcqm4mv2nmr-advanced' to '/home/hcchen/Di-GT-NMR-0101-master-test/Di-GT-NMR-1224-master/src/2025-01-01-20-01-12-pcqm4mv2nmr-advanced/checkpoints/pcqm4mv2nmr-advanced-resume', therefore `best_model_score`, `kth_best_model_path`, `kth_value`, `last_model_path` and `best_k_models` won't be reloaded. Only `best_model_path` will be reloaded.
+  warnings.warn(
+LOCAL_RANK: 3 - CUDA_VISIBLE_DEVICES: [0,1,2,3]
+/home/hcchen/.local/lib/python3.8/site-packages/pytorch_lightning/callbacks/model_checkpoint.py:338: UserWarning: The dirpath has changed from '/home/hcchen/Di-GT-NMR-1224-test2/Di-GT-NMR-1224-master-test/outputs/2025-01-01-20-01-12-pcqm4mv2nmr-advanced/checkpoints/pcqm4mv2nmr-advanced' to '/home/hcchen/Di-GT-NMR-0101-master-test/Di-GT-NMR-1224-master/src/2025-01-01-20-01-12-pcqm4mv2nmr-advanced/checkpoints/pcqm4mv2nmr-advanced-resume', therefore `best_model_score`, `kth_best_model_path`, `kth_value`, `last_model_path` and `best_k_models` won't be reloaded. Only `best_model_path` will be reloaded.
+  warnings.warn(
+LOCAL_RANK: 1 - CUDA_VISIBLE_DEVICES: [0,1,2,3]
+
+  | Name           | Type                            | Params
+-------------------------------------------------------------------
+0 | train_loss     | TrainLossDiscrete               | 0     
+1 | val_nll        | NLL                             | 0     
+2 | val_E_kl       | SumExceptBatchKL                | 0     
+3 | val_E_logp     | SumExceptBatchMetric            | 0     
+4 | test_nll       | NLL                             | 0     
+5 | test_E_kl      | SumExceptBatchKL                | 0     
+6 | test_E_logp    | SumExceptBatchMetric            | 0     
+7 | train_metrics  | TrainMolecularMetricsDiscrete   | 0     
+8 | model          | GraphTransformer                | 222 M 
+9 | noise_schedule | PredefinedNoiseScheduleDiscrete | 0     
+-------------------------------------------------------------------
+222 M     Trainable params
+0         Non-trainable params
+222 M     Total params
+888.089   Total estimated model params size (MB)
+Size of the input features 19 13 11
+Size of the output features 9 6 0
+Restored all states from the checkpoint file at /home/hcchen/Di-GT-NMR-0101-master-test/Di-GT-NMR-1224-master/src/2025-01-01-20-01-12-pcqm4mv2nmr-advanced/checkpoints/pcqm4mv2nmr-advanced/epoch=0.ckpt
+Epoch 0: Val NLL 43.73 Val Edge type KL: 43.42
+Val loss: 43.7314 	 Best val loss:  43.7314
+
+Starting train epoch...
+Epoch 1: Val NLL 26.88 Val Edge type KL: 26.86
+Val loss: 26.8761 	 Best val loss:  26.8761
+
+Epoch 1: -- E_CE: 0.103 -- y_CE: -1.000 -- 3159.3s 
+Epoch 1:{'NoBondCE': 0.09420755505561829, 'SingleCE': 0.06063704937696457, 'DoubleCE': 0.007732645142823458, 'TripleCE': 0.000908102432731539, 'AromaticCE': 0.034848298877477646, 'SingleAromaticCE': 0.001454410725273192}
+Starting train epoch...
+Epoch 2: Val NLL 21.10 Val Edge type KL: 21.09
+Val loss: 21.0981 	 Best val loss:  21.0981
+
+Epoch 2: -- E_CE: 0.083 -- y_CE: -1.000 -- 3285.0s 
+Epoch 2:{'NoBondCE': 0.07725759595632553, 'SingleCE': 0.04814375564455986, 'DoubleCE': 0.006370840594172478, 'TripleCE': 0.0006501682219095528, 'AromaticCE': 0.02890854701399803, 'SingleAromaticCE': 0.0011275761062279344}
+Starting train epoch...
+Epoch 3: Val NLL 18.47 Val Edge type KL: 18.46
+Val loss: 18.4685 	 Best val loss:  18.4685
+
+Epoch 3: -- E_CE: 0.075 -- y_CE: -1.000 -- 3140.8s 
+Epoch 3:{'NoBondCE': 0.06940383464097977, 'SingleCE': 0.042688023298978806, 'DoubleCE': 0.005820602178573608, 'TripleCE': 0.0005700176116079092, 'AromaticCE': 0.026109250262379646, 'SingleAromaticCE': 0.0010114958276972175}
+Starting train epoch...
+Epoch 4: Val NLL 17.64 Val Edge type KL: 17.64
+Val loss: 17.6431 	 Best val loss:  17.6431
+
+Epoch 4: -- E_CE: 0.069 -- y_CE: -1.000 -- 3144.7s 
+Epoch 4:{'NoBondCE': 0.06446927785873413, 'SingleCE': 0.0393795520067215, 'DoubleCE': 0.005483246874064207, 'TripleCE': 0.0005303715006448328, 'AromaticCE': 0.02431897446513176, 'SingleAromaticCE': 0.0009296927019022405}
+Starting train epoch...
+Epoch 5: Val NLL 15.96 Val Edge type KL: 15.95
+Val loss: 15.9551 	 Best val loss:  15.9551
+
+Epoch 5: -- E_CE: 0.066 -- y_CE: -1.000 -- 3141.8s 
+Epoch 5:{'NoBondCE': 0.061184972524642944, 'SingleCE': 0.03711177408695221, 'DoubleCE': 0.005285424180328846, 'TripleCE': 0.0005103694275021553, 'AromaticCE': 0.02316361665725708, 'SingleAromaticCE': 0.0008920726832002401}
+Starting train epoch...
+Epoch 6: Val NLL 14.57 Val Edge type KL: 14.57
+Val loss: 14.5700 	 Best val loss:  14.5700
+
+Epoch 6: -- E_CE: 0.063 -- y_CE: -1.000 -- 3154.4s 
+Epoch 6:{'NoBondCE': 0.0584992952644825, 'SingleCE': 0.03530916944146156, 'DoubleCE': 0.005135504063218832, 'TripleCE': 0.0004876058956142515, 'AromaticCE': 0.022172797471284866, 'SingleAromaticCE': 0.0008464672137051821}
+Starting train epoch...
+Epoch 7: Val NLL 14.20 Val Edge type KL: 14.19
+Val loss: 14.1958 	 Best val loss:  14.1958
+
+Epoch 7: -- E_CE: 0.060 -- y_CE: -1.000 -- 3176.3s 
+Epoch 7:{'NoBondCE': 0.0562099888920784, 'SingleCE': 0.03380589187145233, 'DoubleCE': 0.004976070486009121, 'TripleCE': 0.0004761521704494953, 'AromaticCE': 0.021329637616872787, 'SingleAromaticCE': 0.0008027026196941733}
+Starting train epoch...
+Epoch 8: Val NLL 13.50 Val Edge type KL: 13.49
+Val loss: 13.4971 	 Best val loss:  13.4971
+
+Epoch 8: -- E_CE: 0.058 -- y_CE: -1.000 -- 3128.1s 
+Epoch 8:{'NoBondCE': 0.05439998582005501, 'SingleCE': 0.03264830633997917, 'DoubleCE': 0.004863408859819174, 'TripleCE': 0.0004645754233933985, 'AromaticCE': 0.02064317837357521, 'SingleAromaticCE': 0.0007798853330314159}
+Starting train epoch...
+Epoch 9: Val NLL 13.02 Val Edge type KL: 13.02
+Val loss: 13.0223 	 Best val loss:  13.0223
+
+Epoch 9: -- E_CE: 0.057 -- y_CE: -1.000 -- 3138.8s 
+Epoch 9:{'NoBondCE': 0.05298120155930519, 'SingleCE': 0.03171636164188385, 'DoubleCE': 0.004802044481039047, 'TripleCE': 0.0004540244990494102, 'AromaticCE': 0.02009260654449463, 'SingleAromaticCE': 0.0007594877970404923}
+Starting train epoch...
+Epoch 10: Val NLL 12.71 Val Edge type KL: 12.71
+Val loss: 12.7133 	 Best val loss:  12.7133
+
+Epoch 10: -- E_CE: 0.055 -- y_CE: -1.000 -- 3132.7s 
+Epoch 10:{'NoBondCE': 0.05155166611075401, 'SingleCE': 0.030798394232988358, 'DoubleCE': 0.0046985698863863945, 'TripleCE': 0.0004470616113394499, 'AromaticCE': 0.019545335322618484, 'SingleAromaticCE': 0.0007380461902357638}
+Starting train epoch...
+Epoch 11: Val NLL 12.20 Val Edge type KL: 12.20
+Val loss: 12.2031 	 Best val loss:  12.2031
+
+Epoch 11: -- E_CE: 0.054 -- y_CE: -1.000 -- 3204.1s 
+Epoch 11:{'NoBondCE': 0.050411634147167206, 'SingleCE': 0.0300863329321146, 'DoubleCE': 0.0046081747859716415, 'TripleCE': 0.00043616126640699804, 'AromaticCE': 0.019107984378933907, 'SingleAromaticCE': 0.0007157665095292032}
+Starting train epoch...
+Epoch 12: Val NLL 11.37 Val Edge type KL: 11.37
+Val loss: 11.3704 	 Best val loss:  11.3704
+
+Epoch 12: -- E_CE: 0.053 -- y_CE: -1.000 -- 3093.4s 
+Epoch 12:{'NoBondCE': 0.049353327602148056, 'SingleCE': 0.029457714408636093, 'DoubleCE': 0.004562390968203545, 'TripleCE': 0.00043135721352882683, 'AromaticCE': 0.01863088086247444, 'SingleAromaticCE': 0.0006938943988643587}
+Starting train epoch...
+Epoch 13: Val NLL 11.40 Val Edge type KL: 11.40
+Val loss: 11.4020 	 Best val loss:  11.3704
+
+Epoch 13: -- E_CE: 0.052 -- y_CE: -1.000 -- 3100.3s 
+Epoch 13:{'NoBondCE': 0.048381514847278595, 'SingleCE': 0.02881661243736744, 'DoubleCE': 0.004496519919484854, 'TripleCE': 0.0004258970730006695, 'AromaticCE': 0.018286455422639847, 'SingleAromaticCE': 0.0006772623746655881}
+Starting train epoch...
+Epoch 14: Val NLL 11.20 Val Edge type KL: 11.19
+Val loss: 11.1968 	 Best val loss:  11.1968
+
+Epoch 14: -- E_CE: 0.051 -- y_CE: -1.000 -- 3104.2s 
+Epoch 14:{'NoBondCE': 0.047488100826740265, 'SingleCE': 0.028257211670279503, 'DoubleCE': 0.0044563813135027885, 'TripleCE': 0.0004268470802344382, 'AromaticCE': 0.01791493408381939, 'SingleAromaticCE': 0.0006712431786581874}
+Starting train epoch...
+Epoch 15: Val NLL 10.91 Val Edge type KL: 10.91
+Val loss: 10.9093 	 Best val loss:  10.9093
+
+Epoch 15: -- E_CE: 0.050 -- y_CE: -1.000 -- 3108.0s 
+Epoch 15:{'NoBondCE': 0.04671714827418327, 'SingleCE': 0.027829719707369804, 'DoubleCE': 0.004379205871373415, 'TripleCE': 0.00041706685442477465, 'AromaticCE': 0.01757199317216873, 'SingleAromaticCE': 0.0006495023262687027}
+Starting train epoch...
+Epoch 16: Val NLL 11.10 Val Edge type KL: 11.10
+Val loss: 11.1049 	 Best val loss:  10.9093
+
+Epoch 16: -- E_CE: 0.049 -- y_CE: -1.000 -- 3107.6s 
+Epoch 16:{'NoBondCE': 0.046027060598134995, 'SingleCE': 0.027393396943807602, 'DoubleCE': 0.004370753187686205, 'TripleCE': 0.00041836200398392975, 'AromaticCE': 0.01728176511824131, 'SingleAromaticCE': 0.0006388690671883523}
+Starting train epoch...
+Epoch 17: Val NLL 10.66 Val Edge type KL: 10.65
+Val loss: 10.6564 	 Best val loss:  10.6564
+
+Epoch 17: -- E_CE: 0.048 -- y_CE: -1.000 -- 3104.5s 
+Epoch 17:{'NoBondCE': 0.045376528054475784, 'SingleCE': 0.026969077065587044, 'DoubleCE': 0.004330444149672985, 'TripleCE': 0.00040952159906737506, 'AromaticCE': 0.017061395570635796, 'SingleAromaticCE': 0.0006289629964157939}
+Starting train epoch...
+Epoch 18: Val NLL 10.36 Val Edge type KL: 10.35
+Val loss: 10.3556 	 Best val loss:  10.3556
+
+Epoch 18: -- E_CE: 0.048 -- y_CE: -1.000 -- 3093.4s 
+Epoch 18:{'NoBondCE': 0.04493068903684616, 'SingleCE': 0.026670845225453377, 'DoubleCE': 0.004291909281164408, 'TripleCE': 0.000409318832680583, 'AromaticCE': 0.016885999590158463, 'SingleAromaticCE': 0.0006290115998126566}
+Starting train epoch...
+Epoch 19: Val NLL 10.21 Val Edge type KL: 10.21
+Val loss: 10.2122 	 Best val loss:  10.2122
+
+Epoch 19: -- E_CE: 0.047 -- y_CE: -1.000 -- 3102.7s 
+Epoch 19:{'NoBondCE': 0.04425697401165962, 'SingleCE': 0.026326363906264305, 'DoubleCE': 0.004269429482519627, 'TripleCE': 0.00040892401011660695, 'AromaticCE': 0.01654408872127533, 'SingleAromaticCE': 0.0006102317711338401}
+Starting train epoch...
+Epoch 20: Val NLL 10.42 Val Edge type KL: 10.42
+Val loss: 10.4234 	 Best val loss:  10.2122
+
+Epoch 20: -- E_CE: 0.046 -- y_CE: -1.000 -- 3105.2s 
+Epoch 20:{'NoBondCE': 0.04375353083014488, 'SingleCE': 0.025985736399888992, 'DoubleCE': 0.004238372202962637, 'TripleCE': 0.00040103920036926866, 'AromaticCE': 0.016380468383431435, 'SingleAromaticCE': 0.0005973234656266868}
+Starting train epoch...
+Epoch 21: Val NLL 10.04 Val Edge type KL: 10.04
+Val loss: 10.0391 	 Best val loss:  10.0391
+
+Epoch 21: -- E_CE: 0.046 -- y_CE: -1.000 -- 3098.2s 
+Epoch 21:{'NoBondCE': 0.043282657861709595, 'SingleCE': 0.0256818700581789, 'DoubleCE': 0.004211007617413998, 'TripleCE': 0.0004013229627162218, 'AromaticCE': 0.016187913715839386, 'SingleAromaticCE': 0.0005964713054709136}
+Starting train epoch...
+Epoch 22: Val NLL 9.78 Val Edge type KL: 9.78
+Val loss: 9.7836 	 Best val loss:  9.7836
+
+Epoch 22: -- E_CE: 0.046 -- y_CE: -1.000 -- 3102.0s 
+Epoch 22:{'NoBondCE': 0.042858026921749115, 'SingleCE': 0.025433575734496117, 'DoubleCE': 0.004181015770882368, 'TripleCE': 0.0003945705248042941, 'AromaticCE': 0.01601598598062992, 'SingleAromaticCE': 0.0005889597232453525}
+Starting train epoch...
+Epoch 23: Val NLL 9.80 Val Edge type KL: 9.80
+Val loss: 9.7971 	 Best val loss:  9.7836
+
+Epoch 23: -- E_CE: 0.045 -- y_CE: -1.000 -- 3106.3s 
+Epoch 23:{'NoBondCE': 0.0423746332526207, 'SingleCE': 0.02516159974038601, 'DoubleCE': 0.004150377586483955, 'TripleCE': 0.000397441879613325, 'AromaticCE': 0.015794547274708748, 'SingleAromaticCE': 0.0005785622633993626}
+Starting train epoch...
+Epoch 24: Val NLL 9.44 Val Edge type KL: 9.44
+Val loss: 9.4430 	 Best val loss:  9.4430
+
+Epoch 24: -- E_CE: 0.045 -- y_CE: -1.000 -- 3112.8s 
+Epoch 24:{'NoBondCE': 0.04192490130662918, 'SingleCE': 0.024920377880334854, 'DoubleCE': 0.0041169654577970505, 'TripleCE': 0.0003957974258810282, 'AromaticCE': 0.015591482631862164, 'SingleAromaticCE': 0.0005650594830513}
+Starting train epoch...
+Epoch 25: Val NLL 9.15 Val Edge type KL: 9.15
+Val loss: 9.1481 	 Best val loss:  9.1481
+
+Epoch 25: -- E_CE: 0.044 -- y_CE: -1.000 -- 3106.2s 
+Epoch 25:{'NoBondCE': 0.04154171049594879, 'SingleCE': 0.024628711864352226, 'DoubleCE': 0.0040993457660079, 'TripleCE': 0.00038913756725378335, 'AromaticCE': 0.015478493645787239, 'SingleAromaticCE': 0.0005696071311831474}
+Starting train epoch...
+Epoch 26: Val NLL 9.53 Val Edge type KL: 9.53
+Val loss: 9.5323 	 Best val loss:  9.1481
+
+Epoch 26: -- E_CE: 0.044 -- y_CE: -1.000 -- 3108.5s 
+Epoch 26:{'NoBondCE': 0.04129347950220108, 'SingleCE': 0.024450918659567833, 'DoubleCE': 0.004099909216165543, 'TripleCE': 0.0003919040027540177, 'AromaticCE': 0.015387195162475109, 'SingleAromaticCE': 0.0005645410274155438}
+Starting train epoch...
+Epoch 27: Val NLL 8.94 Val Edge type KL: 8.94
+Val loss: 8.9435 	 Best val loss:  8.9435
+
+Epoch 27: -- E_CE: 0.043 -- y_CE: -1.000 -- 3112.5s 
+Epoch 27:{'NoBondCE': 0.0409202054142952, 'SingleCE': 0.02425641193985939, 'DoubleCE': 0.004078012425452471, 'TripleCE': 0.0003911080420948565, 'AromaticCE': 0.01519672479480505, 'SingleAromaticCE': 0.0005557726835832}
+Starting train epoch...
+Epoch 28: Val NLL 9.01 Val Edge type KL: 9.01
+Val loss: 9.0134 	 Best val loss:  8.9435
+
+Epoch 28: -- E_CE: 0.043 -- y_CE: -1.000 -- 3170.5s 
+Epoch 28:{'NoBondCE': 0.04052797332406044, 'SingleCE': 0.02404104359447956, 'DoubleCE': 0.004052566364407539, 'TripleCE': 0.00038644176675006747, 'AromaticCE': 0.01502767950296402, 'SingleAromaticCE': 0.000551812699995935}
+Starting train epoch...
+Epoch 29: Val NLL 9.07 Val Edge type KL: 9.06
+Val loss: 9.0665 	 Best val loss:  8.9435
+
+Epoch 29: -- E_CE: 0.043 -- y_CE: -1.000 -- 3104.2s 
+Epoch 29:{'NoBondCE': 0.040115319192409515, 'SingleCE': 0.023755429312586784, 'DoubleCE': 0.004011945798993111, 'TripleCE': 0.00038479268550872803, 'AromaticCE': 0.01488605048507452, 'SingleAromaticCE': 0.0005380112561397254}
+Starting train epoch...
+Epoch 30: Val NLL 8.97 Val Edge type KL: 8.97
+Val loss: 8.9698 	 Best val loss:  8.9435
+
+Epoch 30: -- E_CE: 0.042 -- y_CE: -1.000 -- 3116.3s 
+Epoch 30:{'NoBondCE': 0.039955176413059235, 'SingleCE': 0.023657305166125298, 'DoubleCE': 0.004020219203084707, 'TripleCE': 0.0003834106319118291, 'AromaticCE': 0.014806575141847134, 'SingleAromaticCE': 0.0005406873533502221}
+Starting train epoch...
+Epoch 31: Val NLL 8.97 Val Edge type KL: 8.96
+Val loss: 8.9656 	 Best val loss:  8.9435
+
+Epoch 31: -- E_CE: 0.042 -- y_CE: -1.000 -- 3102.2s 
+Epoch 31:{'NoBondCE': 0.03960029408335686, 'SingleCE': 0.023469088599085808, 'DoubleCE': 0.003998279571533203, 'TripleCE': 0.00038024780224077404, 'AromaticCE': 0.014660395681858063, 'SingleAromaticCE': 0.0005281732301227748}
+Starting train epoch...
+Epoch 32: Val NLL 8.65 Val Edge type KL: 8.65
+Val loss: 8.6524 	 Best val loss:  8.6524
+
+Epoch 32: -- E_CE: 0.042 -- y_CE: -1.000 -- 3105.5s 
+Epoch 32:{'NoBondCE': 0.03939107060432434, 'SingleCE': 0.023339776322245598, 'DoubleCE': 0.004008866846561432, 'TripleCE': 0.0003804944863077253, 'AromaticCE': 0.014551665633916855, 'SingleAromaticCE': 0.0005269352113828063}
+Starting train epoch...
+Epoch 33: Val NLL 8.51 Val Edge type KL: 8.51
+Val loss: 8.5125 	 Best val loss:  8.5125
+
+Epoch 33: -- E_CE: 0.041 -- y_CE: -1.000 -- 3091.8s 
+Epoch 33:{'NoBondCE': 0.0389554537832737, 'SingleCE': 0.023081742227077484, 'DoubleCE': 0.003969073295593262, 'TripleCE': 0.00038058875361457467, 'AromaticCE': 0.014377842657268047, 'SingleAromaticCE': 0.0005171783268451691}
+Starting train epoch...
+Epoch 34: Val NLL 8.52 Val Edge type KL: 8.52
+Val loss: 8.5241 	 Best val loss:  8.5125
+
+Epoch 34: -- E_CE: 0.041 -- y_CE: -1.000 -- 3107.2s 
+Epoch 34:{'NoBondCE': 0.03881535679101944, 'SingleCE': 0.022998932749032974, 'DoubleCE': 0.003968449309468269, 'TripleCE': 0.0003795113880187273, 'AromaticCE': 0.01430497970432043, 'SingleAromaticCE': 0.0005159886786714196}
+Starting train epoch...
+Epoch 35: Val NLL 8.54 Val Edge type KL: 8.54
+Val loss: 8.5438 	 Best val loss:  8.5125
+
+Epoch 35: -- E_CE: 0.041 -- y_CE: -1.000 -- 3096.3s 
+Epoch 35:{'NoBondCE': 0.03852762654423714, 'SingleCE': 0.022822489961981773, 'DoubleCE': 0.003934906329959631, 'TripleCE': 0.00037641345988959074, 'AromaticCE': 0.01421581581234932, 'SingleAromaticCE': 0.0005133841768838465}
+Starting train epoch...
+Epoch 36: Val NLL 8.39 Val Edge type KL: 8.39
+Val loss: 8.3942 	 Best val loss:  8.3942
+
+Epoch 36: -- E_CE: 0.041 -- y_CE: -1.000 -- 3089.5s 
+Epoch 36:{'NoBondCE': 0.03824790567159653, 'SingleCE': 0.02265937626361847, 'DoubleCE': 0.003928268328309059, 'TripleCE': 0.0003773145144805312, 'AromaticCE': 0.014101030305027962, 'SingleAromaticCE': 0.0005136035033501685}
+Starting train epoch...
+Epoch 37: Val NLL 8.23 Val Edge type KL: 8.23
+Val loss: 8.2343 	 Best val loss:  8.2343
+
+Epoch 37: -- E_CE: 0.040 -- y_CE: -1.000 -- 3104.2s 
+Epoch 37:{'NoBondCE': 0.03807765617966652, 'SingleCE': 0.022550225257873535, 'DoubleCE': 0.003918693866580725, 'TripleCE': 0.0003722958790604025, 'AromaticCE': 0.014017387293279171, 'SingleAromaticCE': 0.0005014751804992557}
+Starting train epoch...
+Epoch 38: Val NLL 8.25 Val Edge type KL: 8.25
+Val loss: 8.2536 	 Best val loss:  8.2343
+
+Epoch 38: -- E_CE: 0.040 -- y_CE: -1.000 -- 3099.6s 
+Epoch 38:{'NoBondCE': 0.037798069417476654, 'SingleCE': 0.02236393839120865, 'DoubleCE': 0.0039066774770617485, 'TripleCE': 0.0003680332738440484, 'AromaticCE': 0.013923350721597672, 'SingleAromaticCE': 0.0005036406219005585}
+Starting train epoch...
+Epoch 39: Val NLL 8.07 Val Edge type KL: 8.07
+Val loss: 8.0668 	 Best val loss:  8.0668
+
+Epoch 39: -- E_CE: 0.040 -- y_CE: -1.000 -- 3102.6s 
+Epoch 39:{'NoBondCE': 0.037665072828531265, 'SingleCE': 0.02224825508892536, 'DoubleCE': 0.0038964655250310898, 'TripleCE': 0.000378556054783985, 'AromaticCE': 0.0139005733653903, 'SingleAromaticCE': 0.0004990568268112838}
+Starting train epoch...
+Epoch 40: Val NLL 8.31 Val Edge type KL: 8.31
+Val loss: 8.3097 	 Best val loss:  8.0668
+
+Epoch 40: -- E_CE: 0.040 -- y_CE: -1.000 -- 3101.9s 
+Epoch 40:{'NoBondCE': 0.037338029593229294, 'SingleCE': 0.02211569808423519, 'DoubleCE': 0.0038550524041056633, 'TripleCE': 0.0003715706989169121, 'AromaticCE': 0.013726716861128807, 'SingleAromaticCE': 0.0004890353884547949}
+Starting train epoch...
+Epoch 41: Val NLL 8.14 Val Edge type KL: 8.13
+Val loss: 8.1353 	 Best val loss:  8.0668
+
+Epoch 41: -- E_CE: 0.039 -- y_CE: -1.000 -- 3102.6s 
+Epoch 41:{'NoBondCE': 0.03711768612265587, 'SingleCE': 0.021985482424497604, 'DoubleCE': 0.0038672529626637697, 'TripleCE': 0.0003682001552078873, 'AromaticCE': 0.013621861115098, 'SingleAromaticCE': 0.0004887593095190823}
+Starting train epoch...
+Epoch 42: Val NLL 8.11 Val Edge type KL: 8.11
+Val loss: 8.1112 	 Best val loss:  8.0668
+
+Epoch 42: -- E_CE: 0.039 -- y_CE: -1.000 -- 3099.4s 
+Epoch 42:{'NoBondCE': 0.0369279645383358, 'SingleCE': 0.02184627577662468, 'DoubleCE': 0.0038358867168426514, 'TripleCE': 0.0003672296879813075, 'AromaticCE': 0.013560755178332329, 'SingleAromaticCE': 0.0004901236388832331}
+Starting train epoch...
+Epoch 43: Val NLL 7.79 Val Edge type KL: 7.78
+Val loss: 7.7861 	 Best val loss:  7.7861
+
+Epoch 43: -- E_CE: 0.039 -- y_CE: -1.000 -- 3108.2s 
+Epoch 43:{'NoBondCE': 0.03678612783551216, 'SingleCE': 0.021741120144724846, 'DoubleCE': 0.003843872109428048, 'TripleCE': 0.0003666466218419373, 'AromaticCE': 0.013509854674339294, 'SingleAromaticCE': 0.00048170023364946246}
+Starting train epoch...
+Epoch 44: Val NLL 7.84 Val Edge type KL: 7.84
+Val loss: 7.8424 	 Best val loss:  7.7861
+
+Epoch 44: -- E_CE: 0.039 -- y_CE: -1.000 -- 3076.5s 
+Epoch 44:{'NoBondCE': 0.03658384829759598, 'SingleCE': 0.021634839475154877, 'DoubleCE': 0.003823259612545371, 'TripleCE': 0.0003661833761725575, 'AromaticCE': 0.013418382965028286, 'SingleAromaticCE': 0.0004791481769643724}
+Starting train epoch...
+Epoch 45: Val NLL 7.99 Val Edge type KL: 7.99
+Val loss: 7.9943 	 Best val loss:  7.7861
+
+Epoch 45: -- E_CE: 0.039 -- y_CE: -1.000 -- 3097.9s 
+Epoch 45:{'NoBondCE': 0.036377884447574615, 'SingleCE': 0.021534118801355362, 'DoubleCE': 0.0038133510388433933, 'TripleCE': 0.0003668848657980561, 'AromaticCE': 0.013328881934285164, 'SingleAromaticCE': 0.00047575804637745023}
+Starting train epoch...
+Epoch 46: Val NLL 7.70 Val Edge type KL: 7.70
+Val loss: 7.7047 	 Best val loss:  7.7047
+
+Epoch 46: -- E_CE: 0.038 -- y_CE: -1.000 -- 3100.2s 
+Epoch 46:{'NoBondCE': 0.03624463081359863, 'SingleCE': 0.021472332999110222, 'DoubleCE': 0.0038106075953692198, 'TripleCE': 0.0003616241447161883, 'AromaticCE': 0.013252821750938892, 'SingleAromaticCE': 0.00046829183702357113}
+Starting train epoch...
+Epoch 47: Val NLL 7.79 Val Edge type KL: 7.79
+Val loss: 7.7950 	 Best val loss:  7.7047
+
+Epoch 47: -- E_CE: 0.038 -- y_CE: -1.000 -- 3093.0s 
+Epoch 47:{'NoBondCE': 0.03602246940135956, 'SingleCE': 0.021336901932954788, 'DoubleCE': 0.003787093097344041, 'TripleCE': 0.0003647920675575733, 'AromaticCE': 0.013161655515432358, 'SingleAromaticCE': 0.00046939949970692396}
+Starting train epoch...
+Epoch 48: Val NLL 7.88 Val Edge type KL: 7.87
+Val loss: 7.8764 	 Best val loss:  7.7047
+
+Epoch 48: -- E_CE: 0.038 -- y_CE: -1.000 -- 3103.6s 
+Epoch 48:{'NoBondCE': 0.035903431475162506, 'SingleCE': 0.021235395222902298, 'DoubleCE': 0.003801114158704877, 'TripleCE': 0.0003596786118578166, 'AromaticCE': 0.013143797405064106, 'SingleAromaticCE': 0.00046571422717534006}
+Starting train epoch...

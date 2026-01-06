@@ -1,0 +1,52 @@
+# @package _global_
+general:
+  name: 'pcqm4mv2nmr-advanced'  # output directory
+  wandb: disabled   # online | offline | disabled
+  gpus: [0]
+  resume: null
+  test_only: "/home/hcchen/Di-GT-NMR-0108-test/Di-GT-NMR-1224-master/src/2025-01-01-20-01-12-pcqm4mv2nmr-advanced/checkpoints/pcqm4mv2nmr-advanced-resume/epoch=213.ckpt"     # Use absolute path
+  check_val_every_n_epochs: 1
+  chains_to_save: 50
+  log_every_steps: 1
+  number_chain_steps: 50
+  evaluate_all_checkpoints: False
+  strategy: "auto"
+model:
+  type: 'discrete'
+  transition: 'marginal'
+  model: Di-GT-NMR
+  diffusion_steps: 500
+  diffusion_noise_schedule: custom
+  n_layers: 20
+  extra_features: all
+  hidden_mlp_dims:
+    X: 1024
+    E: 512
+    y: 512
+  hidden_dims:
+    dx: 1024
+    de: 256
+    dy: 256
+    n_head: 32
+    dim_ffX: 1024
+    dim_ffE: 512
+    dim_ffy: 512
+  lambda_train:
+  - 5
+  - 0
+dataset:
+  name: 'pcqm4mv2nmr-advanced'               # Name of the dataset, main.py
+  datadir: 'data/pcqm4mv2nmr/pcqm4mv2nmr_advanced' # Path to the dataset
+  random_subset: null
+  pin_memory: False
+  split_seed: 0
+  #edge_types: [8.6701e-01, 9.1088e-02, 7.2015e-03, 6.8787e-04, 3.4016e-02]   #edge_types: [8.6704e-01, 9.1072e-02, 7.1965e-03, 6.8806e-04, 3.3999e-02]
+  edge_types: [8.4975e-01, 9.7150e-02, 8.6272e-03, 8.9793e-04, 4.2763e-02, 8.0763e-04]
+train:
+  n_epochs: 2000
+  batch_size: 128
+  lr: 0.0002  # 0.0002 * num_gpus
+  num_workers: 0 # gpu * 4
+  infer_start_id: 0
+  multi_infer: 100
+  visualize_chain: False

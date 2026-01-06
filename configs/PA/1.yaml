@@ -1,0 +1,49 @@
+# @package _global_
+prediction_input:
+  molecular_formula: 'C23H31NO5' # single molecular run
+  C_H_NMR_shifts_and_HSQC: [[54.9, 4.08, 3.86], [29.6, 2.09, 1.97], [52.7], [185.0], [65.6, 4.71], [43.1, 2.31, 2.31], [109.1], [37.6, 1.86, 1.7], [24.6, 1.97, 1.86], [83.2, 4.18], [34.3, 1.5], [33.8, 1.7, 1.7], [79.3, 4.47], [204.6], [71.6, 4.52], [40.6, 2.81], [127.8, 5.09], [135.2], [22.6, 2.31, 2.31], [29.0, 1.7, 1.7], [138.8, 6.12], [111.7, 5.09, 4.93], [17.3, 0.88, 0.88, 0.88]]
+  HH_COSY: [[54.9, 29.6], [65.6, 43.1], [37.6, 24.6], [24.6, 83.2], [83.2, 34.3], [34.3, 33.8], [34.3, 17.3], [33.8, 79.3], [40.6, 71.6], [127.8, 40.6], [29.0, 22.6], [111.7, 138.8]]
+  num_OH: 2
+  num_NH2: 0
+  num_NH: 0
+  #multi_molecules_input_files: 'inputs/example_input.csv' # Path to the batched molecular input file
+                                                          # if not None, will overwrite the single molecular input
+  multi_molecules_input_files: None
+dataset:
+  name: 'pcqm4mv2nmr-advanced-prediction-pa1-exp'
+  edge_types: [8.4975e-01, 9.7150e-02, 8.6272e-03, 8.9793e-04, 4.2763e-02, 8.0763e-04]
+train:
+  batch_size: 256
+  infer_start_id: 0
+  multi_infer: 256
+  visualize_chain: False
+general:
+  name: 'pcqm4mv2nmr-advanced-prediction-pa1-exp'
+  gpus: [0]
+  test_only: /home/hcchen/Di-GT-NMR-0317/src/Pretrained/pcqm4mv2nmr-advanced-best/checkpoints/pcqm4mv2nmr-advanced/epoch=639.ckpt
+  chains_to_save: 50
+  log_every_steps: 1
+  number_chain_steps: 50
+model: # NOT NEED TO CHANGE
+  type: 'discrete'
+  transition: 'marginal'
+  model: Di-GT-NMR
+  diffusion_steps: 500
+  diffusion_noise_schedule: custom
+  n_layers: 20
+  extra_features: all
+  hidden_mlp_dims:
+    X: 1024
+    E: 512
+    y: 512
+  hidden_dims:
+    dx: 1024
+    de: 256
+    dy: 256
+    n_head: 32
+    dim_ffX: 1024
+    dim_ffE: 512
+    dim_ffy: 512
+  lambda_train:
+  - 5
+  - 0

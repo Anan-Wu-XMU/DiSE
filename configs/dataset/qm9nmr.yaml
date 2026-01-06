@@ -1,0 +1,6 @@
+name: 'qm9nmr-augment'  # Name of the dataset, main.py
+datadir: 'data/qm9nmr/qm9nmr_augment'
+random_subset: null
+pin_memory: False
+split_seed: 0
+edge_types: [0.7584, 0.2014, 0.0149, 0.0066, 0.0186]
