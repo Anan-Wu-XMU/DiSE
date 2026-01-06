@@ -87,7 +87,7 @@ DiSE/
 ```
 ## Usage
 ### 1. Breif Introduction of Input
-Example files can be found in the `configs/bellissinanes` directory (with the file extension *.yaml). Users only need to input the molecular formula (inferred from MS), the corresponding 13C and 1H chemical shifts, and the HH COSY data. 
+Examples can be found in the `configs/bellissinanes` directory (with the file extension *.yaml). Users only need to input the molecular formula (inferred from MS), the corresponding 13C and 1H chemical shifts, and the HH COSY data. 
 
 !!! It's important to note that when inputting the HH COSY data, you should input the chemical shifts of the carbons directly bonded to the hydrogens, not the chemical shifts of the hydrogens themselves.
 
@@ -126,4 +126,5 @@ If you find DiSE useful in your research, please consider citing the following p
 ## Acknowledgements
 Code development based on
 - [DiGress](https://github.com/cvignac/DiGress)
+
 
